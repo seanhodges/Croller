@@ -22,6 +22,7 @@
         app:max="50"
         app:progress_primary_color="#0B3C49"
         app:progress_secondary_color="#EDEDED"
-        app:start_offset="45" />
+        app:start_offset="45"
+        app:value="0" />
 
 </RelativeLayout>

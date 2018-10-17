@@ -123,8 +123,8 @@ public class Croller extends View {
         final int N = a.getIndexCount();
         for (int i = 0; i < N; ++i) {
             int attr = a.getIndex(i);
-            if (attr == R.styleable.Croller_progress) {
-                setProgress(a.getInt(attr, 1));
+            if (attr == R.styleable.Croller_value) {
+                setValue(a.getInt(attr, 1));
             } else if (attr == R.styleable.Croller_label) {
                 setLabel(a.getString(attr));
             } else if (attr == R.styleable.Croller_back_circle_color) {
@@ -475,11 +475,11 @@ public class Croller extends View {
         return super.dispatchTouchEvent(event);
     }
 
-    public int getProgress() {
+    public int getValue() {
         return (int) (deg - 2);
     }
 
-    public void setProgress(int x) {
+    public void setValue(int x) {
         deg = x + 2;
         invalidate();
     }
